@@ -1,218 +1,181 @@
-body{
+html {
+   width: 100%;
+   height: 100%;
+    margin: 0
+    padding: 0;
+  }
 
 
-}
 
-/*
-the text under my name
-*/
-h3{
-   font-family: ;
-   display: block;
-   position: absolute;
-   top: 330px;
-   left: 280px;
-   font-size: 0.9375rem;
-   line-height: normal;
-   letter-spacing: 0.89px;
-   color: #495464;
-}
-
-
-/*
-my name with big font
-*/
-#name{
-  font-family: sacrometno;
-  position: absolute;
-  left: 280px;
-  top: 213px;
-  font-size: 531.2%;
-  display: block;
-  color: ;
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 
 
-.greating{
-  position: absolute;
-  top: 220px;
-  left: 280px;
-  font-family:
-  color: #483838;
-    display: block;
+.navbar {
+  background-color: #222222;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 3;
 }
 
-/*
-the dot next to my
-name,i stole this
-ideafrom someone
-called Ojieame Onimiya,
-Thanks bro!!
-*/
-.dot{
-  font-size: 90px;
-  display: inline-block;
-  color: #002E94;
-}
-
-/*
-my beautiful face-->
-*/
-.face{
-  position: absolute;
-  left: 669px;
-  top: 47px;
-  size: 200px;
-  bottom: 1px;
+/* when i hover over a text it turns red and its background turn yellow */
+::selection {
+  color: red;
+  background: yellow;
 }
 
 
-/*
-the two lines between
-the two paragraphs under
-my name,'cause' i didn't
-know  how to separate
-lines
-*/
-
-.two_lines{
-  position: relative;
-  bottom: 45px;
-}
+/*SCROLL FOR MORE*/
 
 
-/*
-the first page of the
-website
-*/
-#front_page{
-  display: block;
-  background-color: white;
-  width: auto;
-  height: 800px;
-}
-
-
-/*
-SCROLL FOR MORE
-*/
 h4{
-  position: absolute;
-  bottom: 200px;
-  left: 270px;
+  position: relative;
+  top: 5.6rem;
   letter-spacing: 4px;
   size: 11px;
   padding: 4px 15px 9px;
+}
+
+hr{
+  position: relative;
+  top: 4.3rem;
+  margin-left: .8rem;
+  width: 270px;
+  height: 4px;
+  border-top: 4px ;
+  color: white;
+  background-color: #3898EC;
+}
+
+
+.welcoming{
+  position: absolute;
+  text-align: left;
+  left: 15.8rem;
+  top: 11.5rem;
+  line-height: 21em;
+  letter-spacing: 0.89px;
+}
+
+h3{
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+  line-height: 22px;
+  color: #495464;
+}
+
+#name{
+  font-size: 475%;
+  font-family: sans-serif;
+  font-family: "sacrometno";
+}
+
+
+/*the dot next to my name,i stole this idea from someone called Ojieame Onimiya, Thanks bro!!*/
+
+.dot{
+  font-size: 90px;
+  color: #002E94;
+}
+
+.face{
+  position: absolute;
+  top: 8.5rem;
+  right: 8rem;
+}
+
+
+
+#front_page{
+  display: block;
+  background-color: white;
+  min-height: 800px;
+  position: relative;
+  margin: 0;
+  padding-right: 0;
+}
+
+
+@media only screen and (max-width: 600px){
+
+
+   #front_page{
+     width: auto;
+     min-height: 90rem;
+   }
+
+
+  .face{
+    position: absolute;
+    top: 130px;
+    left: 0;
+  }
+
+   .welcoming{
+     position: relative;
+     top: 55rem;
+     left: 2rem;
+   }
 
 }
 
-/*
-the second page in the
-website
-*/
+
+/*the second page in the website*/
+
 #about{
     display: block;
-    background-color: #C8FFD4;
+    background-color: #09eaea;
     width: auto;
     position: relative;
-    height: 900px;
-    margin-left: auto;
-
+    min-height: 800px;
 }
 
+/* the colored cards in the div about section   */
+
+#colord-cards{
+  /* position: relative;
+  bottom: 170px;
+  left: 10px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 /*
-the containers that
-contain info about me
+the containers that contain info about me
 */
+.container{
+  position: relative;
+  width: 55%;
+  height: auto;
+  border-radius: 30px;
+  border: 2px solid;
+  letter-spacing: normal;
+}
+
 
 .container1{
-   position: absolute;
-   display: block;
-   height: 260px;
-   width: 550px;
-   left: 140px;
-   bottom: 80px;
-   background-color: #9ED5C5;
-   border-radius: 30px;
-   border: 2px solid;
+  background-color: #9ED5C5;
 }
-
-
-
-
 
 .container2{
-   position: absolute;
-   display: block;
-   height: 260px;
-   width: 550px;
-   right: 140px;
-   bottom: 80px;
-   background-color: #FFACC7;
-   border-radius: 30px;
-   border: 2px solid;
+  background-color: #FEB139;
 }
-
-
-
 
 .container3{
-   position: absolute;
-   display: block;
-   height: 260px;
-   width: 550px;
-   left: 140px;
-   top: 80px;
-   background-color: #FEB139;
-   border-radius: 30px;
-   border: 2px solid;
+  background-color: #FBF46D;
 }
 
-
-
-
-.container4{
-   position: absolute;
-   display: block;
-   height: 260px;
-   width: 550px;
-   right: 140px;
-   top: 80px;
-   background-color: #FBF46D;
-   border-radius: 30px;
-   border: 2px solid;
-}
-
-
-/*
-the titles in the
-containers , cause i
-didn't know how to
-style them unseparatly
-*/
-
-
-.general{
-  padding: 24px 50px 0 25px;
-  font-size: 2.457rem;
-  font-weight: bold;
-  margin: 10px 0 10px 0;
-}
-
-
-
-
-.skills{
-  padding: 24px 50px 0 25px;
-  font-size: 2.457rem;
-  font-weight: bold;
-  margin: 10px 0 10px 0;
-
-}
-
-
-.hoobies{
+.card-title{
   padding: 17px 50px 0 25px;
   font-size: 2.457rem;
   font-weight: bold;
@@ -220,16 +183,15 @@ style them unseparatly
 }
 
 
-
-
-.achievements{
-  padding: 24px 50px 0 25px;
-  font-size: 2.457rem;
-  font-weight: bold;
-  margin: 10px 0 10px 0;
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    outline: #FFE15D;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* background-size: 100%, 100%; */
+    border-radius: 50%;
+    border: 1px solid black;
 }
-
-
 
 
 h2{
@@ -240,9 +202,6 @@ h2{
 }
 
 
-/*
-the text inside the containers
-*/
 p{
   padding: 0 30px 90px 30px;
   font-family:'Atkinson Hyperlegible', sans-serif;
@@ -254,85 +213,33 @@ p{
 }
 
 
-hr{
-  position: absolute;
-  bottom: 174px;
-  left: 280px;
-  width: 270px;
-  height: 50px;
-  border-top: 4px dotted;
-  color: #3898EC;
-}
+/*the third page of the website*/
 
-
-
-/*
-the third page of the
-website
-*/
 
 #personal{
-  height: 156.25rem;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/cool.jpg");
+  min-height: 320%;
   width: 96.5625;
-  position: absolute;
-  background: white;
+  /* position: absolute; */
+  background-blend-mode: multiply;
 }
 
 
-/*
-the next three divs
-are for the section
-that i apologize for
-lying in the about section
-*/
+/*i really don't know what the fuck i wrote that, i tried to do something in
+bootstrap but it didn't work and i'm to lazy to delet it or debugging the code*/
 
 
-.hr1{
-  background-color: white;
-  border-top: 16px dotted grey;
-  border-style: dotted;
-  height: 2.5rem;
-  width: 17.5rem;
-  position: absolute;
-  top: 6.25rem;
-  left: 40.625rem;
-
-}
-
-.hr2{
-  background-color: white;
-  border-top: 16px dotted grey;
-  border-style: dotted;
-  height: 2.5rem;
-  width: 17.5rem;
-  position: absolute;
-  top: 15rem;
-  left: 40.625rem;
-}
-
-
-.sorry{
-  position: absolute;
-  top: 9.9375rem;
-  left: 39.06rem;
-  letter-spacing: 1px;
-}
-
-
-
-
-/*
-i really don't know what
-the fuck i wrote that, i
-tried to do something in
-bootstrap but it didn't work
-and i'm to lazy to delet it or
-debugging the code
-*/
 .row{
-  position: relative;
-  top: 28.125rem;
+  padding-top: 20rem;
+  margin-right: 0;
+}
 
+
+.col-lg-6{
+  padding-left: 100px;
 }
 
 
@@ -340,22 +247,15 @@ debugging the code
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.78;
-  color: #495464;
+  color: white;
 }
-
 
 #footer{
-  height: 21.25rem;
-  width: 96.56rem;
-  background-color: #C8FFD4;
-  display: inline-block;
-  position: absolute;
+  background-color: #09eaea;
+  height: auto;
   text-align: center;
-  top: 4100px;
 }
 
-.date{
-  position: relative;
-  text-align: center;
-  top: 6.6em
+h5{
+  padding: 50px 0;
 }
