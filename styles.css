@@ -104,7 +104,7 @@ h3{
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 767px){
 
 
    #front_page{
@@ -225,6 +225,13 @@ p{
   width: 96.5625;
   /* position: absolute; */
   background-blend-mode: multiply;
+}
+
+
+@media screen and (max-width: 767px){   
+    #personal{      
+        background-image:url("images/Cool 2.jpg");
+    } 
 }
 
 
